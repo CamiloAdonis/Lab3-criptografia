@@ -1,12 +1,11 @@
-/* Cargar CryptoJS en la pgina (ejecutar en consola) */
-2 var script = document.createElement(’script’);
-3 script.src =
+var script = document.createElement(’script’);
+script.src =
 ’https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js’;
-4 document.head.appendChild(script);
-5
-6 /* Generar hash SHA-256 */
-7 setTimeout(() => {
-8 const password = "lab123";
-9 const hash = CryptoJS.SHA256(password).toString(CryptoJS.enc.Hex);
-10 console.log("Hash SHA-256:", hash);
-11 }, 3000);
+document.head.appendChild(script);
+
+/* Generar hash SHA-256 */
+setTimeout(() => {
+const password = "lab123";
+const hash = CryptoJS.SHA256(password).toString(CryptoJS.enc.Hex);
+console.log("Hash SHA-256:", hash);
+}, 3000);
